@@ -1,0 +1,418 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: white;
+}
+
+@font-face {
+    font-family: "Lemonmilk";
+    src: url("../fonts/LEMONMILK-Regular.otf");
+}
+
+@font-face {
+    font-family: "Lemonmilk-Light";
+    src: url("../fonts/LEMONMILK-Light.otf");
+}
+/*---------------------------header-------------------------*/
+
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.nav {
+    width: 95%;
+    height: 90px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav_logo {
+    width: 200px;
+}
+
+.nav_menu {
+    display: flex;
+    width: 55%;
+}
+
+.nav_list {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav_item {
+    list-style-type: none;
+    font-family: "Lemonmilk";
+}
+
+.nav_link {
+    text-decoration: none;
+    color: rgb(50, 50, 50, 50%);
+}
+
+/*-----------------------main--------------------*/
+
+.main {
+    width: 100%;
+}
+
+.home {
+    width: 100%;
+    height: 670px;
+    display: flex;
+    justify-content: center;
+}
+
+.home_container {
+    width: 95%;
+}
+
+.home_logo {
+    width: 200px;
+    position: absolute;
+    left: 206px;
+    top: 128px;
+    z-index: 1;
+}
+
+.home_target {
+    width: 577px;
+    height: 421px;
+    position: absolute;
+    left: 35px;
+    top: 266px;
+    background: linear-gradient(118.03deg, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0.3) 100%);
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.target_title {
+    width: 510px;
+    font-family: "Lemonmilk";
+    font-size: 22px;
+    color: rgb(0, 96, 139);
+}
+
+.target_description {
+    width: 510px;
+    font-family: "Lemonmilk-Light";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+}
+
+.home_image {
+    position: absolute;
+    width: 860px;
+    height: 605px;
+    left: 460px;
+    top: 116px;
+    z-index: -1;
+}
+
+/*-----------------------info_data---------------------*/
+
+.info {
+    width: 100%;
+}
+
+.info_data {
+    display: flex;
+    justify-content: center;
+    font-family: "Lemonmilk";
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 96, 139);
+}
+
+.data_item {
+    width: auto;
+    margin: 20px;
+}
+
+/*------------------------info_images------------------*/
+
+.info_images {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.images_container {
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    margin: 40px 0 40px 0;
+}
+
+.img_container {
+    width: 410px;
+    height: 300px;
+}
+
+.img_item {
+    width: 100%;
+    height:100%;
+    object-fit: cover;
+}
+
+/*----------------------info-cards----------------------*/
+
+.info_cards {
+    width: 100%;
+}
+
+.cards_title {
+    width: auto;
+    font-family: "Lemonmilk";
+    font-size: 14px;
+    margin-left: 40px;
+}
+
+.before_icon {
+    width: 50px;
+    height: 50px;
+    position: relative;
+    left: 45px;
+    top: 175px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 50%;
+}
+
+.before_icon > span, .next_icon > span {
+    display: flex;
+    justify-content: center;
+    margin-top: 13px;
+}
+
+.next_icon {
+    width: 50px;
+    height: 50px;
+    position: relative;
+    right: 45px;
+    top: 175px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 50%;
+}
+
+.cards_container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 60px 0;
+    box-sizing: border-box;
+
+}
+
+.card_item {
+    width: 390px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 3px;
+}
+
+.card_transport {
+    height: 414px;
+}
+
+.card_tour {
+    height: 490px;
+}
+
+.card_img {
+    width: 390px;
+    height: 194px;
+}
+
+/* .last_card_img {
+
+} */
+
+.card_img_item {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+.card_description {
+    display: grid;
+
+}
+
+.card_title {
+    width: 100%;
+    font-family: "Lemonmilk";
+    font-size: 14px;
+    color: rgb(44, 61, 91);
+    text-align: center;
+}
+
+.card_title:first-child {
+    margin-top: 30px;
+}
+
+.card_text {
+    width: 357px;
+    margin: -10px 17px;
+    font-family: "Lemonmilk-Light";
+    font-size: 14px;
+}
+
+.card_price {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0 30px;
+    font-family: 'Lemonmilk';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    color: #2C3D5B;
+}
+
+.price_item {
+    text-align: center;
+}
+
+.price_item > p {
+    margin: 10px;
+}
+
+.price_item > p:last-child, p > span{
+    font-size: 12px;
+    margin-bottom: 30px;
+}
+
+.card_button {
+    width: 328px;
+    height: 33px;
+    margin: 0 31px;
+    font-family: "Lemonmilk";
+    font-size: 14px;
+    color: rgb(255, 255, 255);
+    background: #2C3D5B;
+    border-radius: 5px;
+    border: #2C3D5B;
+}
+
+/*-----------------------subscriptions--------------------*/
+
+.subscriptions {
+    width: 100%;
+    background: rgb(44, 61, 91);
+    text-align: center;
+    padding: 38px 0;
+}
+
+.subs_title {
+    font-family: 'Lemonmilk';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 29px;
+    color: rgb(255, 255, 255);
+}
+
+.subs_title > span {
+    font-family: 'Lemonmilk';
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 70px;
+    letter-spacing: 0.5em;
+}
+
+.subs_input {
+    width: 506px;
+    height: 61px;
+    background: rgb(44, 61, 91);
+    border: 1px solid #D9D9D9;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-family: 'Lemonmilk';
+    font-weight: 500;
+    font-size: 14px;
+    padding-left: 20px;
+    color: rgba(217, 217, 217, 0.4);
+
+}
+
+/*-------------------footer-----------------*/
+
+.footer {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.footer_networks {
+    display: flex;
+    justify-content: center;
+    background: rgb(124, 173, 38);
+    padding: 60px 0;
+}
+
+.social_networks {
+    text-align: center;
+}
+
+.social_networks_icon {
+    margin: 4px;
+}
+
+.social_networks_email {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: rgb(255, 255, 255);
+}
+
+.footer_logo {
+    width: 320px;
+    margin-top: 20px;
+}
+
+.footer_container {
+    display: flex;
+}
+
+.footer_list {
+    list-style: none;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 36px;
+    margin: 0 10px;
+    border-left: 1px solid rgb(196, 196, 196);
+    color: rgb(255, 255, 255);
+}
+
+.footer_list:first-child {
+    border-left: none;
+}
+
+/*-------------------footer-copy--------------------*/
+
+.footer_copy {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 77px;
+    background-color: rgb(50, 50, 50);
+}
+
+.copy {
+    margin: 0;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 16px;
+    color: #FFFFFF;
+}
